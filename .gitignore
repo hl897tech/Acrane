@@ -1,0 +1,18 @@
+﻿# Java
+target/
+*.class
+*.jar
+# IntelliJ
+.idea/
+*.iml
+# Maven
+.settings/
+# VSCode
+.vscode/
+# OS
+Thumbs.db
+.DS_Store
+# logs
+*.log
+# backend build
+ArcaneFrontend-backend/target/

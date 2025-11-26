@@ -1,0 +1,22 @@
+<div id="orders"></div>
+
+<script type="module">
+import { BASE_URL } from "./js/config.js";
+
+const userId = localStorage.getItem("userId");
+
+async function loadOrders() {
+  const res = await fetch(`${BASE_URL}/orders/user/${userId}`);
+  const data = await res.json();
+
+  orders.innerHTML = data.data.map(o => `
+    <div>
+      <h2>Order #${o.orderId}</h2>
+      <p>Status: ${o.status}</p>
+      <p>Total: $${o.totalPrice}</p>
+    </div>
+  `).join("");
+}
+
+loadOrders();
+</script>

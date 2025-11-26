@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arcane Footwear · Futuristic Fantasy Sneakers</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header></header>
+
+  <main class="main-container">
+    <section class="hero">
+      <div>
+        <h1 class="hero-title">
+          Step into the <span class="accent">Arcane Future</span>
+        </h1>
+        <p class="hero-subtitle">
+          Arcane Footwear blends fantasy-world storytelling with neon-lit technology.
+          Browse limited-edition kicks forged for cosplayers, gamers, and fashion mages.
+        </p>
+        <div class="hero-cta">
+          <a href="products.html" class="btn btn-primary">Shop the catalog</a>
+          <a href="login.html" class="btn btn-ghost">Sign in</a>
+        </div>
+      </div>
+
+      <div class="hero-orbit">
+        <div class="orbit-ring"></div>
+        <div class="orbit-core">
+          Arcane soles, luminous glyphs, responsive cushioning – all connected to a
+          Spring Boot backend and MySQL engine.
+        </div>
+        <div class="orbit-tag" style="top: 6%; left: 60%;">Live API-driven</div>
+        <div class="orbit-tag" style="bottom: 8%; right: 12%;">JWT secured</div>
+      </div>
+    </section>
+
+    <section class="mt-6">
+      <div class="section-title">Why Arcane?</div>
+      <div class="section-subtitle">
+        Designed as an ITC-505 project, engineered like a production-ready storefront.
+      </div>
+      <div class="grid grid-3 mt-4">
+        <div class="card">
+          <h3>Fantasy-first design</h3>
+          <p class="mt-2">Each pair is inspired by mages, rogues, dragons, and distant galaxies.</p>
+        </div>
+        <div class="card">
+          <h3>Real-time engine</h3>
+          <p class="mt-2">Spring Boot + MySQL backend, JWT auth, and RESTful APIs connect every click to the database.</p>
+        </div>
+        <div class="card">
+          <h3>Future-ready UX</h3>
+          <p class="mt-2">Futuristic dark UI with neon accents, responsive layout, and intuitive flows.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer></footer>
+
+  <script type="module" src="js/ui.js"></script>
+  <script type="module">
+    import { renderLayout } from "./js/ui.js";
+    document.addEventListener("DOMContentLoaded", renderLayout);
+  </script>
+</body>
+</html>
